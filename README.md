@@ -18,7 +18,7 @@ docker pull kschmeckpeper/py_faster_rcnn_ros
 
 Start the docker image
 ```
-docker run -rm -v ~/PATH/TO/catkin_ws_docker:/curiosity/catkin_ws_docker -it --network host --gpus all -w /curiosity/catkin_ws_docker kschmeckpeper/py_faster_rcnn_ros  bash
+docker run --rm -v ~/PATH/TO/catkin_ws_docker:/curiosity/catkin_ws_docker -it --network host --gpus all -w /curiosity/catkin_ws_docker kschmeckpeper/py_faster_rcnn_ros  bash
 ```
 
 The first time you start the docker image, you will need to build the code in the catkin workspace.  
